@@ -1,0 +1,25 @@
+{
+  "name": "splitwise",
+  "version": "1.0.0",
+  "description": "Web application, is used to calculate amount of tip to leave after a service, splitting costs with more people and splitting tips with more people",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Web",
+    "application",
+    "Tip",
+    "tip",
+    "splitter"
+  ],
+  "author": "Daniel Vidar Holm",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}

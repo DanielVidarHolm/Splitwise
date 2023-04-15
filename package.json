@@ -4,22 +4,26 @@
   "description": "Web application, is used to calculate amount of tip to leave after a service, splitting costs with more people and splitting tips with more people",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "sass-watch": "sass --no-source-map --watch scss/main.scss public/css/main.css",
+    "nodemon-watch": "nodemon server.js -e *",
+    "dev": "npm-run-all --parallel sass-watch nodemon-watch"
   },
   "keywords": [
-    "Web",
     "application",
-    "Tip",
     "tip",
-    "splitter"
+    "splitter",
+    "calculator"
   ],
   "author": "Daniel Vidar Holm",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^16.0.3",
     "ejs": "^3.1.9",
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "sass": "^1.62.0"
   },
   "devDependencies": {
-    "nodemon": "^2.0.22"
+    "nodemon": "^2.0.22",
+    "npm-run-all": "^4.1.5"
   }
 }

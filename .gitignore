@@ -16,3 +16,4 @@
 .prettierignore
 
 .node-modules
+.env

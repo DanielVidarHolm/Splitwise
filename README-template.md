@@ -12,7 +12,6 @@ This is a tip calculator app. It allows users to enter the total amount of their
   - [My process](#my-process)
     - [Built with](#built-with)
     - [Challenges](#challenges)
-    - [Optimizations](#optimizations)
     - [Continued development](#continued-development)
     - [Useful resources](#useful-resources)
   - [Author](#author)
@@ -27,46 +26,41 @@ This is a tip calculator app. It allows users to enter the total amount of their
 
 ### Links
 
-- Live Site URL: [Visit Live Site](https://daniels-qr-code-component.onrender.com/)
+- Live Site URL: [Visit Live Site](https://splitwise-yobe.onrender.com/)
 
 ## My process
 
 
 ### Built with
 
-- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-- Mobile-first workflow
+- **HTML5** Semantic markup
+- **CSS** custom properties
+- **SASS/SCSS**
+- **Node.js** Object oriented programming
+- **Express** for routing
+- **EJS** for templating
+- **Render** for Web service hosting
+- **Mobile-first** workflow
+- **Canva** for image editing
 
 
 ### Challenges
 
-The image was behaving oddly and wasn't filling the container, I fixed it by displaying the image as a block and Hide the overflow
+Decided to go with SASS instead of css. I was challenged with learning a new way to organize my css.
 
-```css
-.image-container {
-    width:100%;
-    border-radius:10px;
-    overflow:hidden;
-}
-  .image-container > img{
-          width:100%;
-          display:block;
-      }
-```
-### Optimizations
-
-Better naming on css styles
+I had some challenge on writing the script becouse there was a lot of variable to keep an eye on for example changing the colors of the text when clicking on a checkbox. 
 
 ### Continued development
 
-In the future i would like to add a button that generates a QR Code based on what url you input.
+In the future i will optimize my Sass code to be more efficent. I want to add more modules. 
+
+I will abstract my code better in future, Encapsulate the calculator in a class
 
 
 ### Useful resources
 
-- [Css Tricks](https://css-tricks.com/) - This helped me for flexbox layoting reasons. I really liked this pattern and will use it going forward.
+- [Sass docs](https://sass-lang.com/documentation/) - This helped me for understanding the syntax of the Sass language and to better abstract my Sass
+- [MDN](https://developer.mozilla.org/en-US/) - Looked up the MDN for general questions
 
 
 ## Author

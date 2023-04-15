@@ -1,0 +1,281 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+/****************************************
+Basic styles
+*****************************************/
+body {
+  background-color: #c6f8d5;
+}
+
+/****************************************
+Layout
+*****************************************/
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+
+/****************************************
+
+*****************************************/
+.main {
+  margin-top: 2rem;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.img-container {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  max-width: 700px;
+  background-color: hsl(0, 0%, 100%);
+  gap: 30px;
+  box-shadow: 0px 0px 50px 1px #97b6a0;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 25px 25px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+.card-right {
+  background-color: #125e5f;
+  display: flex;
+  flex-direction: column;
+  padding: 25px 25px;
+  border-radius: 20px;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.card-right > main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+.card-right .output-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-right .text {
+  display: flex;
+  flex-direction: column;
+}
+
+.sep {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.hidden {
+  display: none;
+}
+
+.clear {
+  color: #c6f8d5;
+}
+
+.clear-dark {
+  color: #125e5f;
+}
+
+.danger {
+  color: rgb(236, 67, 67);
+}
+
+.faded {
+  color: hsl(184, 14%, 56%);
+  font-size: 12px;
+}
+
+.important {
+  color: #98D7C2;
+  font-size: 32px;
+}
+
+.card-left {
+  background-color: hsl(0, 0%, 100%);
+  padding: 5px 5px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/****************************************
+Input styling
+*****************************************/
+input[type=radio] {
+  background-color: #125e5f;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  appearance: none;
+}
+
+input[type=radio]:hover {
+  background-color: hsl(184, 14%, 56%);
+}
+
+input[type=radio]:checked {
+  background-color: #98D7C2;
+}
+
+input {
+  font-size: 24px;
+}
+
+input[type=number] {
+  background-color: hsl(189, 41%, 97%);
+  width: 100%;
+  height: 32px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+  text-align: end;
+  appearance: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number]:focus-visible {
+  outline: 2px solid #98D7C2;
+}
+
+.rel {
+  color: hsl(0, 0%, 100%);
+  position: relative;
+}
+.rel .icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10px;
+}
+.rel label {
+  font-size: 16px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#custom::placeholder {
+  text-align: center;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 14px;
+}
+
+.field-radio {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  row-gap: 8px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.field-radio > div {
+  width: 30%;
+  height: 40px;
+}
+.field-radio input[type=number] {
+  height: 100%;
+  font-size: 20px;
+}
+
+.button {
+  width: 100%;
+  background-color: #98D7C2;
+  color: #125e5f;
+  text-align: center;
+  padding-top: 5px;
+  font-size: 16px;
+  text-transform: uppercase;
+  padding-bottom: 5px;
+  border: unset;
+}
+
+.button:hover {
+  background-color: #b8ecdb;
+  color: #125e5f;
+}
+
+.button:disabled {
+  background-color: #167D7F;
+  color: #125e5f;
+}
+
+/****************************************
+Attributions
+*****************************************/
+.attribution {
+  font-size: 16px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.color-black {
+  color: black;
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    flex-direction: column;
+  }
+  .container > section {
+    width: 100%;
+  }
+  .field-radio > div {
+    width: 45%;
+    height: 40px;
+  }
+}
